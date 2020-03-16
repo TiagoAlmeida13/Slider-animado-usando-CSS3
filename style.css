@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota:300,400,700&display=swap');
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Bellota', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    margin: auto;
+}
+
+.contact-social a{
+    text-decoration:none;
+    color: #181847;
+}
+
+.contact-social a:hover{
+    background-color: #181847;
+    color: #fff;
+}
+
+.title-1 {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact li {
+    list-style: none;
+    padding: 5px;
+}
+
+h1{
+    margin: 5px;
+    color: #181847;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu h3{
+    margin-top: 15px;
+    color: #181847
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #181847;
+}
+
+.menu li a:hover{
+    background-color: #181847;
+    color: #FFF;
+}
+
+.slider {
+    width: 600px; 
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.slider-content  {
+    width: 2400px;  /* a soma da largura de todos os elementos */
+    transition: 1s ease; 
+    height: 200px; /* tem a mesma altura das imagens */ 
+}
+
+.slider-content:hover {
+    animation-play-state: paused;
+}
+
+
+.slider-content img {
+    width: 600px;
+    height: 200px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    animation: slide 12s ease infinite;
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(0%);
+    }
+
+    12.5% {
+    transform: translateX(0%);
+    }
+
+    25% {
+    transform: translateX(-25%);
+    }
+
+    37.5% {
+    transform: translateX(-25%);
+    }
+
+    50% {
+    transform: translateX(-50%);
+    }
+    
+    62.5% {
+    transform: translateX(-50%);
+    }
+
+    75% {
+    transform: translateX(-75%);
+    }
+
+    87.5% {
+    transform: translateX(-75%);
+    }
+
+    99% {
+    transform: translateX(-75%);
+    }
+
+    100% {
+    transform: translateX(0);
+    }
+}
+
+
+.main-content {
+    margin: 80px;
+}
+
+.main-content h2{
+    color: #181847;
+}
+
+.main-content p{
+    margin-top: 10px;
+    color: #181847;
+}
+
+
+.dicas ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.dicas img{
+    height: 100px;
+    width: 100px;
+}
+
+.dicas h3{
+    margin-bottom: 20px;
+    color: #181847;
+}
+
+.text-desc {
+    width: 150px;
+    font-size: 12px;
+}
